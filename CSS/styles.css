@@ -1,0 +1,319 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-principal: #ffd100;
+    --color-secundario: #000000;
+    --color-fondo: #f4f4f4;
+    --color-blanco: #ffffff;
+    --fuente-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    background-color: var(--color-fondo);
+    color: var(--color-secundario);
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+header {
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    padding: 35px 20px;
+    text-align: center;
+    border-bottom: 8px solid var(--color-secundario);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+    text-shadow: 1px 1px 0px var(--color-blanco);
+}
+
+header p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #222222;
+}
+
+.menu-navegacion {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.menu-navegacion a {
+    display: inline-block;
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid var(--color-principal);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.menu-navegacion a:hover {
+    background-color: var(--color-blanco);
+    color: var(--color-secundario);
+    border-color: var(--color-secundario);
+}
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+section {
+    background-color: var(--color-blanco);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    scroll-margin-top: 140px;
+}
+
+h2 {
+    color: var(--color-secundario);
+    border-bottom: 3px solid var(--color-principal);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.destinos-tags {
+    margin-top: 10px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.lista-paradas {
+    list-style: none;
+}
+
+.lista-paradas li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+}
+
+.lista-paradas li::before {
+    content: "•";
+    color: var(--color-principal);
+    font-size: 2.5rem;
+    position: absolute;
+    left: 5px;
+    top: -15px;
+}
+
+.contenedor-mapa {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border: 2px solid var(--color-secundario);
+    border-radius: 4px;
+}
+
+.contenedor-mapa iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.ramales-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.tarjeta-ramal {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.badge-ramal {
+    display: inline-block;
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    border: 1px solid var(--color-secundario);
+}
+
+.badge-ramal.semi {
+    background-color: #dc3545;
+    color: var(--color-blanco);
+    border: none;
+}
+
+.tarjeta-ramal h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.tarjeta-ramal p {
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.tabla-contenedor {
+    overflow-x: auto; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: var(--color-blanco);
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.accesibilidad-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.item-accesibilidad {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-left: 5px solid #28a745;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 600px) {
+    .ramales-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .accesibilidad-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+section:target {
+    animation: destello 1.5s ease-in-out;
+}
+
+/* BOTON UP PAGE */
+
+.boton-arriba {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 65px;
+    height: 65px;
+    background-color: var(--color-principal); /* Ahora es amarillo para que resalte al toque */
+    color: var(--color-secundario); /* Texto negro */
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px solid var(--color-secundario);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.boton-arriba span {
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.boton-arriba small {
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    margin-top: 2px;
+}
+
+/* Efecto al pasar el mouse por arriba */
+.boton-arriba:hover {
+    background-color: var(--color-blanco);
+    transform: scale(1.15); /* Se agranda un poco más */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes destello {
+    0% {
+        background-color: var(--color-blanco);
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    25% {
+        background-color: #fff9db;
+        box-shadow: 0 0 15px var(--color-principal);
+        transform: scale(1.01);
+    }
+    100% {
+        background-color: var(--color-blanco);
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transform: scale(1);
+    }
+}

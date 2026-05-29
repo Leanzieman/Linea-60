@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Línea 60 - Centro de Transporte</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Línea 60</h1>
+        <p>Servicio de Transporte Público de Pasajeros</p>
+        <nav class="menu-navegacion">
+            <a href="#informacion">Información</a>
+            <a href="#paradas">Paradas</a>
+            <a href="#mapa">Mapa</a>
+            <a href="#ramales">Ramales</a>
+            <a href="#horarios">Horarios</a>
+            <a href="#accesibilidad">Accesibilidad</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="informacion">
+            <h2>Información del Servicio</h2>
+            <p>La <strong>Línea 60</strong> (Micro Ómnibus Norte S.A.) es una de las líneas de colectivos más emblemáticas de la región metropolitana de Buenos Aires, conectando la Ciudad Autónoma de Buenos Aires con la zona norte del conurbano bonaerense.</p>
+            <div class="destinos-tags">
+                <span class="tag">Constitución</span>
+                <span class="tag">Plaza Italia</span>
+                <span class="tag">Cruces de San Isidro</span>
+                <span class="tag">Tigre</span>
+                <span class="tag">Escobar</span>
+            </div>
+        </section>
+
+        <section id="paradas">
+            <h2>Principales Paradas del Recorrido</h2>
+            <ul class="lista-paradas">
+                <li><strong>Terminal Constitución:</strong> Conexión con Tren Roca y Línea C de Subte. (Centro de Trasbordo).</li>
+                <li><strong>Plaza Congreso:</strong> Av. Entre Ríos e Hipólito Yrigoyen.</li>
+                <li><strong>Plaza Italia:</strong> Av. Santa Fe y Thames (Palermo) - Conexión Línea D de Subte.</li>
+                <li><strong>Puente Saavedra:</strong> Límite entre CABA y Zona Norte. Conexión con Metrobús Norte.</li>
+                <li><strong>Canal de San Fernando:</strong> Av. Cazón y Alvear.</li>
+                <li><strong>Terminal Escobar / Tigre:</strong> Destinos finales según el ramal seleccionado.</li>
+            </ul>
+        </section>
+
+        <section id="mapa">
+            <h2>Mapa del Recorrido</h2>
+            <p style="margin-bottom: 10px;">A continuación se muestra la ubicación de las terminales principales y la traza generalizada por Av. Cabildo y Autopista Panamericana.</p>
+            <div class="contenedor-mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d210457.77259160162!2d-58.73010515152932!3d-34.492652156822294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x95bccb3bfecbc157%3A0xc3afbf6ba525cae0!2sPlaza%20Constituci%C3%B3n%2C%20CABA!3m2!1d-34.6276222!2d-58.3814407!4m5!1s0x95bbca45316e87f3%3A0x600ef7ec20857ef5!2sEscobar%2C%20Provincia%20de%20Buenos%20Aires!3m2!1d-34.3486119!2d-58.7903657!5e0!3m2!1ses-419!2sar!4v1716680000000!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section id="ramales">
+            <h2>Ramales del Servicio</h2>
+            <p style="margin-bottom: 15px;">La Línea 60 cuenta con múltiples recorridos que conectan de forma directa diferentes puntos estratégicos de CABA y Zona Norte:</p>
+            
+            <div class="ramales-grid">
+                <div class="tarjeta-ramal">
+                    <div class="badge-ramal">Ramal A</div>
+                    <h3>Constitución - Tigre</h3>
+                    <p><strong>Por Panamericana:</strong> El recorrido más rápido hacia el norte, utilizando la traza principal de la autopista y pasando por el centro de Tigre.</p>
+                </div>
+
+                <div class="tarjeta-ramal">
+                    <div class="badge-ramal">Ramal B</div>
+                    <h3>Constitución - Escobar</h3>
+                    <p><strong>Por Panamericana:</strong> Recorrido extenso que llega hasta la terminal de Escobar, conectando centros comerciales y parques industriales.</p>
+                </div>
+
+                <div class="tarjeta-ramal">
+                    <div class="badge-ramal">Ramal C</div>
+                    <h3>Constitución - Tigre Hotel</h3>
+                    <p><strong>Por Flecha:</strong> Alternativa histórica que pasa por zonas residenciales de Vicente López, San Isidro y San Fernando.</p>
+                </div>
+
+                <div class="tarjeta-ramal">
+                    <div class="badge-ramal">Ramal D</div>
+                    <h3>Plaza Italia - Escobar</h3>
+                    <p><strong>Servicio Corto:</strong> Inicia en Palermo y agiliza el traslado de pasajeros que se dirigen directamente a la zona norte profunda.</p>
+                </div>
+
+                <div class="tarjeta-ramal">
+                    <div class="badge-ramal semi">Semirápido</div>
+                    <h3>Constitución - Escobar</h3>
+                    <p><strong>Por Autopista:</strong> Servicio diferencial con paradas limitadas sobre las principales avenidas y cabinas de peaje, ideal para horas pico.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="horarios">
+            <h2>Horarios y Frecuencia</h2>
+            <p>El servicio opera las <strong>24 horas</strong> del día, los 365 días del año. Las frecuencias varían según el horario comercial.</p>
+            
+            <div class="tabla-contenedor">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Franja Horaria</th>
+                            <th>Frecuencia Aproximada</th>
+                            <th>Tipo de Servicio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>04:00 a 07:00</td>
+                            <td>12 - 15 minutos</td>
+                            <td>Normal / Semirápido</td>
+                        </tr>
+                        <tr>
+                            <td>07:00 a 20:00 (Hora Pico)</td>
+                            <td>7 - 10 minutos</td>
+                            <td>Todos los ramales activos</td>
+                        </tr>
+                        <tr>
+                            <td>20:00 a 00:00</td>
+                            <td>15 - 20 minutos</td>
+                            <td>Normal</td>
+                        </tr>
+                        <tr>
+                            <td>00:00 a 04:00 (Nocturno)</td>
+                            <td>30 - 45 minutos</td>
+                            <td>Servicio Mínimo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="accesibilidad">
+            <h2>Características de Accesibilidad</h2>
+            <div class="accesibilidad-grid">
+                <div class="item-accesibilidad">
+                    <strong>Piso Bajo y Rampas:</strong> Unidades equipadas con sistema de arrodillamiento y rampas manuales/automáticas para el ingreso de sillas de ruedas.
+                </div>
+                <div class="item-accesibilidad">
+                    <strong>Espacio Reservado:</strong> Sector exclusivo dentro del colectivo con anclajes de seguridad para sillas de ruedas y asientos preferenciales.
+                </div>
+                <div class="item-accesibilidad">
+                    <strong>Diseño Web Accesible:</strong> Esta página utiliza tipografía de tamaño legible (18px), alto contraste de colores (negro y amarillo) y navegación simple compatible con lectores de pantalla.
+                </div>
+                <div class="item-accesibilidad">
+                    <strong>Aviso Sonoro y Visual:</strong> Cartelería LED frontal de alta visibilidad y próximas unidades equipadas con audio de aviso de paradas.
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <a href="#" class="boton-arriba" aria-label="Volver al inicio">
+        <span>↑</span>
+        <small>SUBIR</small>
+    </a>
+
+    <footer>
+        <p>Centro de Transporte - Trabajo Práctico N°2</p>
+        <p style="font-size: 0.8rem; margin-top: 5px; color: #b3b3b3;">Línea 60 | Integrante: Leandro Zieman</p>
+    </footer>
+
+</body>
+</html>
